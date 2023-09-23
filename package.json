@@ -1,5 +1,5 @@
 {
-  "name": "to-do-app",
+  "name": "todo-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mantine/core": "^6.0.19",
+    "@material/slider": "^14.0.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "sass": "^1.66.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
