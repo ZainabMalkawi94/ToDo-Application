@@ -1,3 +1,4 @@
+
 import  { useEffect, useState } from 'react';
 import useForm from '../../hooks/form';
 import { v4 as uuid } from 'uuid';
@@ -23,10 +24,10 @@ const ToDo = () => {
     setList([...list, item]);
   }
 
-  // function deleteItem(id) {
-  //   const items = list.filter(item => item.id !== id);
-  //   setList(items);
-  // }
+  function deleteItem(id) {
+    const items = list.filter(item => item.id !== id);
+    setList(items);
+  }
 
   function toggleComplete(id) {
     const items = list.map(item => {
@@ -86,14 +87,14 @@ const ToDo = () => {
 
 
        
-          <span>Difficulty</span>
+          <span >Difficulty</span>
           <Slider
             aria-label="Difficulty"
             defaultValue={defaultValues.difficulty}
             onChange={(event, value) => handleChange({ target: { name: 'difficulty', value } })}
             step={1}
             marks
-            min={1}
+            min={0}
             max={5}
           />
         

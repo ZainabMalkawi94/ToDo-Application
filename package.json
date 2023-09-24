@@ -15,10 +15,14 @@
     "@material/slider": "^14.0.0",
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.10",
+    "base-64": "^1.0.0",
+    "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
+    "react-cookies": "^0.1.1",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.16.0",
     "sass": "^1.66.1",
+    "superagent": "^8.1.2",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

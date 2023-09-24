@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow-y: auto; /* Add vertical scrollbar if content overflows the fixed height */
+    /* overflow-y: auto; Add vertical scrollbar if content overflows the fixed height */
   }
   
   
@@ -57,7 +57,7 @@
 
   
   .items-container {
-    flex: 1;
+    /* flex: 1; */
     width: 65%; /* Adjust the width as desired, e.g., 65% */
   }
   

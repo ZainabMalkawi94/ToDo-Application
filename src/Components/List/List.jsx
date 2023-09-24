@@ -1,8 +1,8 @@
 import { Card, Grid, Col, Text } from '@mantine/core';
-import { useSettings } from '../../context/settings/index';
-import "./list.scss";
+import { useSettings } from '../../Context/Setting/settingContext';
+import "./List.scss";
 
-function List({ searchKeyword }) {
+function List() {
   const { settings } = useSettings();
 
   return (
@@ -10,18 +10,14 @@ function List({ searchKeyword }) {
       <h2>Current Settings</h2>
       <Grid gutter="sm">
         <Col span={12}>
-          <Text size="lg">Display Count: {settings.displayCount}</Text>
+          <Text size="lg">Display Count: {settings.maxItemsPerPage}</Text>
         </Col>
         <Col span={12}>
           <Text size="lg">
             Hide Completed: <span>{settings.hideCompleted ? 'Yes' : 'No'}</span>
           </Text>
         </Col>
-        <Col span={12}>
-          <Text size="lg">
-            Search by Keyword: <span>{searchKeyword}</span>
-          </Text>
-        </Col>
+       
       </Grid>
     </Card>
   );
